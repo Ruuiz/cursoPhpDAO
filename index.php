@@ -6,9 +6,22 @@ require_once("config.php");
 //$usuarios = $sql->select("SELECT * FROM tb_usuarios");
 //echo json_encode($usuarios);
 
-$root = new Usuario();
+//carrega um usuario
+//$root = new Usuario();
+//$root->loadbyId(1);
+//echo $root;
 
-$root->loadbyId(1);
+//carrega uma lista de usuarios
+//$lista = Usuario::getList();
+//echo json_encode($lista);
 
-echo $root;
+//$search = Usuario::search("jo");
+//echo json_encode($search);
+
+//carrega usuario com login e senha
+
+$usuario = New Usuario();
+$usuario-> login("Joao", "13579");
+
+echo $usuario;
  ?>
